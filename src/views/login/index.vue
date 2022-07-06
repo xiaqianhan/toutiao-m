@@ -1,7 +1,9 @@
 <template>
   <div class="login-container">
       <!-- 导航栏 -->
-      <van-nav-bar class="page-nav-bar" title="登录" />
+      <van-nav-bar class="page-nav-bar" title="登录"  >
+         <van-icon name="arrow-left" size="18" slot="left" @click="$router.back()"/>
+      </van-nav-bar>
 
       <!-- 登陆表单 -->
       <!-- 表单验证
